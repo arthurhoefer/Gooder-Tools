@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Gooder Tools", "Gooder Tools\Gooder Tools.vbproj", "{CF2452FD-AEA9-482C-A35D-62B24D7C8C1B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Gooder Studio", "Gooder Studio\Gooder Studio.vbproj", "{3C2EDA41-E54C-4641-8BEE-951335AA1E06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF2452FD-AEA9-482C-A35D-62B24D7C8C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2452FD-AEA9-482C-A35D-62B24D7C8C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2452FD-AEA9-482C-A35D-62B24D7C8C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2452FD-AEA9-482C-A35D-62B24D7C8C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2EDA41-E54C-4641-8BEE-951335AA1E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2EDA41-E54C-4641-8BEE-951335AA1E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2EDA41-E54C-4641-8BEE-951335AA1E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2EDA41-E54C-4641-8BEE-951335AA1E06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A09D60B3-544F-43B9-898B-8FDBC0281E1F}
+	EndGlobalSection
+EndGlobal
