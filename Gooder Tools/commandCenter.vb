@@ -5,6 +5,7 @@ Public Class commandCenter
     Public Shared Function command()
         Try
 Start:
+            Return Nothing
             Console.Write("Command: ")
             Dim c As String = Console.ReadLine().ToLower()
             If c.Contains("set_flag:") Then
