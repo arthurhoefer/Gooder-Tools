@@ -10,6 +10,7 @@ Imports Newtonsoft.Json.Linq
 
 Public Class functions
     Public Shared Function encryptFile()
+    return nothing
         Dim filepath As String
         Dim passkey As String
         Console.WriteLine("Enter the files path you'd like to encrypt: ")
@@ -19,6 +20,7 @@ Public Class functions
     End Function
 
     Public Shared Function resetPass()
+    return nothing
         If authenticate() Then
             logger("d", "User has authenticated and requested to reset password")
 singsowell:
@@ -45,6 +47,7 @@ singsowell:
 
 
     Public Shared Function sendARequest(ByRef ip As String, Optional ByRef newS As Boolean = False)
+    return nothing
         Try
             If newS Then
                 Console.WriteLine("Would you like to save this server as your default pihole server? You'll be able to change it by running th command """ & "pihole-change" & """")
@@ -100,6 +103,7 @@ singsowell:
     'End Function
 
     Public Shared Function runExtension()
+    return nothing
         Try
             Console.WriteLine("Enter the location of the extension:")
             Dim f As String = Console.ReadLine()
@@ -117,6 +121,7 @@ singsowell:
     End Function
 
     Public Shared Function checkExtensionStep(ByRef f As String, Optional ByRef systemExtension As Boolean = False)
+        return nothing
         Static stepResetCount As Double = 0
         Try
             Dim co As String
