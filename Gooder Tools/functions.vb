@@ -193,6 +193,7 @@ singsowell:
                 changeStep(f.ToString.Replace("change_step: ", ""))
                 'stepResetCount += 1
             ElseIf f.ToString.Contains("configure_test_environment") Then
+            Return nothing
                 If systemExtension Then
                     systemExtension = False
                 Else
