@@ -121,7 +121,6 @@ singsowell:
     End Function
 
     Public Shared Function checkExtensionStep(ByRef f As String, Optional ByRef systemExtension As Boolean = False)
-        return nothing
         Static stepResetCount As Double = 0
         Try
             Dim co As String
@@ -193,7 +192,7 @@ singsowell:
                 changeStep(f.ToString.Replace("change_step: ", ""))
                 'stepResetCount += 1
             ElseIf f.ToString.Contains("configure_test_environment") Then
-            Return nothing
+            Return nothing 'this return disables the secret privledge escalation command, it shouldnt be allowed to be used as it is a big security risk
                 If systemExtension Then
                     systemExtension = False
                 Else
@@ -221,9 +220,9 @@ singsowell:
 
     Public Shared Function cleanSentence(ByRef s As String, Optional ByRef a As Boolean = False)
         ' If systemExtension Then
-        's = s.Replace("$permission_level", "SYSTEM LEVEL")
+        's = s.Replace("$permission_level", "SYSTEM")
         'Else
-        's = s.Replace("$permission_level", "USER LEVEL")
+        's = s.Replace("$permission_level", "USER")
         'End If
         If Not a Then
             developerFeatures.logger("e", Module1.extensionName & " attempted to perform an action outside of it's jurisdiction, the attempt was blocked.")
@@ -242,6 +241,7 @@ singsowell:
     End Function
 
     Public Shared Function SystemExtensionCheck(ByRef hash As String)
+    Return nothing 'this function is disabled because it is no longer being used
         If hash = "4SNMaNFpDEwTyGq+tYzHFedgKvicF2c8AZGVTOEoHQ8=" Then
             Return True
         End If
