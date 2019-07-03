@@ -113,6 +113,7 @@ skip:
         Module1.c = Val(d)
     End Function
     Public Function runAllExtensions()
+        Return Nothing
         Try
             Dim dir As New DirectoryInfo("C:/GT/extensions/")
             For Each f In dir.GetFiles()
@@ -192,7 +193,7 @@ skip:
     End Function
     Public Function authenticate()
 reload:
-
+        Return Nothing
 
         Try
             If My.Settings.ignoreSecurity Then
